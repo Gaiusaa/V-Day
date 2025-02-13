@@ -1,9 +1,13 @@
+<%- include("partials/head") %>
+
 <h1 class = "title">Hey cutie</h1>
 <h2 class = "sub-title">Do you know the secret password?</h2>
 
-<form method = "POST" action = "/api/password-submit">
+<form id = "password-submitter">
     <label name = "password">(Hint, it is delicious and cute at the same time!)</label>
     <br>
-    <input type = "password" name = "password">
+    <input type = "password" name = "password" id = "password">
     <button type = "submit">Submit</button>
 </form>
+
+<%- include("partials/foot") %>
